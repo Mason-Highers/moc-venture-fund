@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio · Moc Venture Fund</title>
+  <meta name="description" content="Companies backed by the Moc Venture Fund.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="portfolio" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- HERO: Utah's colored block with an overlapping card -->
+    <section class="block-hero on-dark" aria-labelledby="hero-h">
+      <div data-contours="10" data-opacity="0.18"></div>
+      <div class="container">
+        <h1 class="h1" id="hero-h" data-c="portfolio.hero.title" data-split data-split-now></h1>
+        <nav class="anchor-list" aria-label="On this page" data-list="portfolio.hero.anchors">
+          <template><a data-f-href="href" data-f="label"></a></template>
+        </nav>
+      </div>
+    </section>
+    <div class="container" id="about">
+      <div class="float-card"><p class="eyebrow" data-c="portfolio.hero.cardEyebrow"></p><p data-c="portfolio.hero.card"></p></div>
+    </div>
+
+    <!-- HIGHLIGHTS: Utah's gold circles on a line -->
+    <section class="section" aria-labelledby="hl-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" id="hl-h" data-c="portfolio.highlights.eyebrow"></p></div>
+        <ul class="highlights" data-list="portfolio.highlights.items">
+          <template><li data-f="." data-reveal></li></template>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FUNDS: North Dakota's numbered fund cards -->
+    <section class="section section--ice" id="fund" aria-label="Funds">
+      <div class="container funds" data-list="portfolio.funds">
+        <template>
+          <article class="fund" data-reveal>
+            <span class="badge" data-f="num"></span>
+            <h3 data-f="name"></h3>
+            <p data-f="text"></p>
+            <a class="btn btn--gold btn--sm" data-f-href="link.href"><span data-f="link.label"></span><span class="btn-dot" data-icon="arrow"></span></a>
+          </article>
+        </template>
+      </div>
+    </section>
+
+    <!-- COMPANIES: filter by stage, switch between grid and list -->
+    <section class="section" id="companies" aria-labelledby="co-h">
+      <div class="container">
+        <div class="toolbar">
+          <h2 class="h2" id="co-h" data-c="portfolio.companiesTitle"></h2>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+            <div class="chips" data-filter-for="co-grid" data-filter-key="data-stage" role="group" aria-label="Filter by stage" data-list="portfolio.filters">
+              <template><button class="chip" type="button" data-f-attr="data-value:.|slug" data-f="." aria-pressed="false"></button></template>
+            </div>
+            <div class="view-toggle" data-view-for="co-grid" role="group" aria-label="Layout">
+              <button type="button" data-view="grid" aria-pressed="true"><span data-icon="grid"></span>Grid</button>
+              <button type="button" data-view="list" aria-pressed="false"><span data-icon="list"></span>List</button>
+            </div>
+          </div>
+        </div>
+        <div class="companies" id="co-grid" data-list="portfolio.companies">
+          <template>
+            <article class="co" data-f-attr="data-stage:stage|slug" data-reveal tabindex="0">
+              <div class="logo-tile"><span data-f="name|initials"></span></div>
+              <div class="body">
+                <div class="top"><h3 data-f="name"></h3></div>
+                <p class="one" data-f="one"></p>
+                <div class="tags"><span class="tag" data-f="sector"></span><span class="tag" data-f="stage"></span><span class="tag tag--status" data-f="status" data-f-attr="data-status:status|slug"></span><span class="tag" data-f="year"></span></div>
+              </div>
+              <div class="reveal"><p data-f="desc"></p><a data-f-href="url" target="_blank" rel="noopener">Visit site <span data-icon="external"></span></a></div>
+            </article>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION: Atland's "Work with us" band (words come from home.cta) -->
+    <section class="section section--navy cta-band" aria-labelledby="cta-h">
+      <div data-contours="10" data-opacity="0.16"></div>
+      <div class="container inner">
+        <h2 class="h2" id="cta-h" data-c="home.cta.title" data-split></h2>
+        <p data-c="home.cta.text" data-reveal></p>
+        <div data-reveal><a class="btn btn--gold" data-c-href="home.cta.button.href" data-magnetic><span data-c="home.cta.button.label"></span><span class="btn-dot" data-icon="arrow"></span></a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

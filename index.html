@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moc Venture Fund · Student-run venture capital at UTC</title>
+  <meta name="description" content="Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="home" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- HERO: North Dakota's big serif headline beside Utah's big animated mark and echo lines -->
+    <section class="hero" aria-labelledby="hero-h">
+      <div data-contours="10" data-step="0.26" data-opacity="0.15"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-c="home.hero.eyebrow" data-reveal="fade"></p>
+          <h1 class="h1" id="hero-h" data-c="home.hero.title" data-split data-split-now></h1>
+          <p class="lead" data-c="home.hero.lead" data-reveal></p>
+          <div class="actions" data-reveal>
+            <a class="btn" data-c-href="home.hero.primary.href" data-magnetic><span data-c="home.hero.primary.label"></span><span class="btn-dot" data-icon="arrow"></span></a>
+            <a class="link-line" data-c-href="home.hero.secondary.href" data-c="home.hero.secondary.label"></a>
+          </div>
+        </div>
+        <div class="hero-mark" data-mark-intro>
+          <span class="mk-shadow" aria-hidden="true"></span>
+          <div class="mk-holder" data-mark></div>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+    </section>
+
+    <!-- WHAT IS MVF: Utah's gold thread drops from one label to the next -->
+    <section class="section about" style="padding-top: 24px" aria-labelledby="about-h">
+      <div class="container thread-step">
+        <p class="eyebrow t-start" data-c="home.hero.explore"></p>
+        <p class="eyebrow t-end" id="about-h" data-c="home.about.eyebrow"></p>
+      </div>
+      <div class="container">
+        <p class="statement" data-c="home.about.statement" data-reveal style="margin-top: 36px"></p>
+      </div>
+    </section>
+
+    <!-- BAND + ARCH CARDS: North Dakota's diagonal break and arch-topped cards -->
+    <section class="band on-dark" aria-labelledby="band-h">
+      <div data-contours="9" data-opacity="0.13"></div>
+      <div class="container">
+        <div class="band-title">
+          <h2 id="band-h" data-c="home.band.title" data-reveal></h2>
+          <p data-c="home.band.subtitle" data-reveal></p>
+        </div>
+        <div class="arches" data-list="home.pillars">
+          <template>
+            <article class="arch-card" data-reveal>
+              <div class="arch-photo">
+                <div data-ridges="5" data-f-attr="data-ridges:$i|n" data-sun></div>
+                <span class="num" data-f="$i|nn" aria-hidden="true"></span>
+                <span class="photo-chip" data-f="photo"></span>
+              </div>
+              <div class="arch-body">
+                <h3 data-f="title"></h3>
+                <p data-f="text"></p>
+                <a class="arrow-circle" data-f-href="href" data-f-attr="aria-label:title" data-icon="arrow"></a>
+              </div>
+            </article>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR APPROACH: Utah's vertical line with circles; it fills as you scroll -->
+    <section class="section" aria-labelledby="approach-h">
+      <div class="container approach-grid">
+        <div class="approach-head">
+          <p class="eyebrow" data-c="home.approach.eyebrow"></p>
+          <h2 class="h2" id="approach-h" data-c="home.approach.title" data-split></h2>
+          <a class="link-line" href="thesis.html#how">How the fund works</a>
+        </div>
+        <ol class="timeline" data-list="home.approach.steps">
+          <template>
+            <li class="tl-item" data-reveal>
+              <span class="node" data-f="$i|n" aria-hidden="true"></span>
+              <h3 data-f="title"></h3>
+              <p data-f="text"></p>
+            </li>
+          </template>
+        </ol>
+      </div>
+    </section>
+
+    <!-- IN NUMBERS: North Dakota's photo-and-stats split, with counters -->
+    <section class="numbers" aria-labelledby="numbers-h">
+      <div class="numbers-photo on-dark">
+        <div data-contours="9" data-opacity="0.22"></div>
+        <span class="photo-chip" data-c="home.numbers.photo"></span>
+      </div>
+      <div class="numbers-body">
+        <p class="eyebrow" id="numbers-h" data-c="home.numbers.eyebrow"></p>
+        <div class="stats" data-list="home.numbers.stats">
+          <template>
+            <div class="stat" data-reveal>
+              <div class="num" data-f-attr="data-count:value,data-suffix:suffix"></div>
+              <div class="rule"></div>
+              <p data-f="label"></p>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIANT STATEMENT + DOUBLE RULE: Utah's "Do good. Do well." moment -->
+    <section class="section" aria-labelledby="motto-h">
+      <div class="container">
+        <h2 class="giant" id="motto-h" data-lines>
+          <span class="split-line"><span data-c="home.statement.lines.0"></span></span>
+          <span class="split-line"><span data-c="home.statement.lines.1"></span></span>
+        </h2>
+        <div class="double-rule"><span class="ln" aria-hidden="true"></span><b data-c="home.divider"></b><span class="ln" aria-hidden="true"></span></div>
+        <div class="tiles" data-list="home.audiences">
+          <template>
+            <a class="tile" data-f-href="href" data-reveal>
+              <span class="kicker" data-f="kicker"></span>
+              <h3 data-f="title"></h3>
+              <p data-f="text"></p>
+              <span class="arrow-circle" data-icon="arrow"></span>
+            </a>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICES: Utah's serif quote beside a round portrait -->
+    <section class="section section--off" aria-labelledby="voices-h">
+      <div class="container">
+        <p class="eyebrow" id="voices-h" data-c="home.voices.eyebrow" style="margin-bottom: 30px"></p>
+        <div class="voices" data-quotes>
+          <div>
+            <div class="quote-stage" data-list="home.voices.quotes">
+              <template>
+                <figure class="quote">
+                  <blockquote data-f="quote"></blockquote>
+                  <figcaption><b data-f="name"></b><span data-f="role"></span></figcaption>
+                </figure>
+              </template>
+            </div>
+            <div class="quote-dots" role="tablist" aria-label="Choose a quote"></div>
+          </div>
+          <div class="portrait" aria-hidden="true"><span data-icon="person"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO STRIP: Atland's scrolling logo row -->
+    <section class="section section--tight" aria-labelledby="marquee-h">
+      <div class="container"><p class="eyebrow" id="marquee-h" data-c="home.marquee.eyebrow"></p></div>
+      <div class="marquee" data-marquee style="margin-top: 22px">
+        <div class="marquee-track" data-list="home.marquee.items">
+          <template><span class="marquee-item"><span class="logo-dot" data-f=".|initials"></span><span data-f="."></span></span></template>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION: Atland's "Work with us" band -->
+    <section class="section section--navy cta-band" aria-labelledby="cta-h">
+      <div data-contours="10" data-opacity="0.16"></div>
+      <div class="container inner">
+        <h2 class="h2" id="cta-h" data-c="home.cta.title" data-split></h2>
+        <p data-c="home.cta.text" data-reveal></p>
+        <div data-reveal><a class="btn btn--gold" data-c-href="home.cta.button.href" data-magnetic><span data-c="home.cta.button.label"></span><span class="btn-dot" data-icon="arrow"></span></a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

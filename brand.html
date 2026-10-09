@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand and logo · Moc Venture Fund</title>
+  <meta name="description" content="The Moc Venture Fund logo, colors, and type, and why they're built this way.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="brand" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- THE MARK: hover a part to see it highlighted -->
+    <section class="brand-hero section" style="padding-bottom: 40px" aria-labelledby="hero-h">
+      <div class="container brand-stage">
+        <div class="brand-mark" data-mark-intro><div class="mk-holder" data-mark></div></div>
+        <div class="sec-head" style="margin:0">
+          <p class="eyebrow" data-c="brand.eyebrow"></p>
+          <h1 class="h1" id="hero-h" data-c="brand.title" data-split data-split-now></h1>
+          <p class="lead" data-c="brand.lead"></p>
+          <div class="parts" data-list="brand.parts">
+            <template><button class="part-card" type="button" data-f-attr="data-part:$i|partkey"><h3 data-f="title"></h3><p data-f="text"></p></button></template>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRATEGY -->
+    <section class="section section--navy" aria-labelledby="strat-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="brand.labels.strategyEyebrow"></p><h2 class="h2" id="strat-h" data-c="brand.strategyTitle" data-split></h2></div>
+        <ol class="strategy" data-list="brand.strategy">
+          <template><li data-reveal><span class="n" data-f="$i|nn"></span><h3 data-f="title"></h3><p data-f="text"></p></li></template>
+        </ol>
+      </div>
+    </section>
+
+    <!-- COLOR: click a swatch to copy its hex code -->
+    <section class="section" aria-labelledby="col-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="brand.labels.colorEyebrow"></p><h2 class="h2" id="col-h" data-c="brand.labels.colorTitle"></h2><p class="lead" data-c="brand.colorsNote"></p></div>
+        <div class="swatches" data-list="brand.colors">
+          <template><button class="swatch" type="button" data-f-attr="data-copy:hex" data-reveal><span class="chipc" data-f-attr="style:hex|bg"></span><span class="info"><b data-f="name"></b><code data-f="hex"></code><small data-f="note"></small></span></button></template>
+        </div>
+      </div>
+    </section>
+
+    <!-- TYPE -->
+    <section class="section section--off" aria-labelledby="type-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="brand.labels.typeEyebrow"></p><h2 class="h2" id="type-h" data-c="brand.labels.typeTitle"></h2></div>
+        <div class="type-specimens" data-list="brand.type">
+          <template><div class="type-row" data-reveal><div class="nm"><b data-f="name"></b><span data-f="use"></span></div><div class="sp" data-f="sample" data-f-attr="style:name|font"></div></div></template>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILES + RULES -->
+    <section class="section" aria-labelledby="files-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="brand.labels.filesEyebrow"></p><h2 class="h2" id="files-h" data-c="brand.labels.filesTitle"></h2><p class="lead" data-c="brand.labels.filesLead"></p></div>
+        <div class="files" data-list="brand.files">
+          <template><div class="file" data-reveal><div class="pv" data-f-attr="class:dark|pvclass"><img data-f-attr="src:file,alt:label"></div><a data-f-href="file" download><span data-f="label"></span><span data-icon="download"></span></a></div></template>
+        </div>
+        <div class="dodont" style="margin-top: 48px">
+          <div><h3 data-c="brand.labels.dos"></h3><ul class="ticks" data-list="brand.rules.dos"><template><li><span data-icon="check"></span><span data-f="."></span></li></template></ul></div>
+          <div><h3 data-c="brand.labels.donts"></h3><ul class="ticks" data-list="brand.rules.donts"><template><li><span data-icon="x"></span><span data-f="."></span></li></template></ul></div>
+        </div>
+        <p class="note" style="margin-top: 28px" data-c="brand.approval"></p>
+      </div>
+    </section>
+    <div class="toast" role="status" aria-live="polite"></div>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

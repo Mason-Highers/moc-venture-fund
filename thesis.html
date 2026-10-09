@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our thesis · Moc Venture Fund</title>
+  <meta name="description" content="The Moc Venture Fund's investment thesis: what we invest in and why.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="thesis" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- HERO: Utah's colored block with an overlapping card -->
+    <section class="block-hero on-dark" aria-labelledby="hero-h">
+      <div data-contours="10" data-opacity="0.18"></div>
+      <div class="container">
+        <h1 class="h1" id="hero-h" data-c="thesis.hero.title" data-split data-split-now></h1>
+        <nav class="anchor-list" aria-label="On this page" data-list="thesis.anchors">
+          <template><a data-f-href="href" data-f="label"></a></template>
+        </nav>
+      </div>
+    </section>
+    <div class="container">
+      <div class="float-card"><p class="eyebrow" data-c="thesis.hero.cardEyebrow"></p><p data-c="thesis.hero.card"></p></div>
+    </div>
+
+    <div class="section">
+      <div class="container doc-layout">
+        <!-- sticky contents with a gold progress line -->
+        <nav class="toc" aria-label="Sections" data-list="thesis.anchors">
+          <span class="toc-fill" aria-hidden="true"></span>
+          <template><a data-f-href="href"><span data-f="$i|nn"></span><b data-f="label" style="font-weight:inherit"></b></a></template>
+        </nav>
+
+        <div class="doc-content">
+          <section class="doc-sec" id="purpose" aria-labelledby="purpose-h">
+            <div class="sec-head"><span class="sec-num">01</span><h2 class="h2" id="purpose-h" data-c="thesis.purpose.title" data-split></h2><p class="lead" data-c="thesis.purpose.intro"></p></div>
+            <ol class="rank" data-list="thesis.purpose.items">
+              <template><li data-reveal><span class="n" data-f="$i|n"></span><div><h3 data-f="title"></h3><p data-f="text"></p><div class="bar" aria-hidden="true"><i></i></div></div></li></template>
+            </ol>
+          </section>
+
+          <section class="doc-sec" id="who" aria-labelledby="who-h">
+            <div class="sec-head"><span class="sec-num">02</span><h2 class="h2" id="who-h" data-c="thesis.who.title" data-split></h2><p class="lead" data-c="thesis.who.intro"></p></div>
+            <div class="rings-wrap">
+              <div class="rings" aria-hidden="true">
+                <div class="ring ring--outer"><span class="label" data-c="thesis.who.outer.label"></span><p data-c="thesis.who.outer.text"></p></div>
+                <div class="ring ring--inner"><span class="label" data-c="thesis.who.inner.label"></span><p data-c="thesis.who.inner.text"></p></div>
+                <span class="pin"></span>
+              </div>
+              <div style="display:grid;gap:18px">
+                <div class="who-card is-key" data-reveal><span class="label" data-c="thesis.who.inner.label"></span><p data-c="thesis.who.inner.text"></p></div>
+                <div class="who-card" data-reveal><span class="label" data-c="thesis.who.outer.label"></span><p data-c="thesis.who.outer.text"></p></div>
+                <p class="def-box" data-c="thesis.who.definition" data-reveal></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="doc-sec" id="look" aria-labelledby="look-h">
+            <div class="sec-head"><span class="sec-num">03</span><h2 class="h2" id="look-h" data-c="thesis.look.title" data-split></h2><p class="lead" data-c="thesis.look.intro"></p></div>
+            <div class="criteria" data-list="thesis.look.criteria">
+              <template><article class="crit" data-reveal><span class="ico" data-f-attr="data-icon:icon"></span><h3 data-f="title"></h3><p data-f="text"></p></article></template>
+            </div>
+            <p class="check-line" data-c="thesis.look.check" data-reveal></p>
+          </section>
+
+          <section class="doc-sec" id="how" aria-labelledby="how-h">
+            <div class="sec-head"><span class="sec-num">04</span><h2 class="h2" id="how-h" data-c="thesis.how.title" data-split></h2></div>
+            <div class="two-col">
+              <div class="who-card is-key" data-reveal><span class="label" data-c="thesis.how.students.label"></span><p data-c="thesis.how.students.text"></p></div>
+              <div class="who-card" data-reveal><span class="label" data-c="thesis.how.utc.label"></span><p data-c="thesis.how.utc.text"></p></div>
+            </div>
+            <div class="flow" role="img" aria-label="Resources, capital, and deal flow go from UTC to students; students review, diligence, and decide on founders.">
+              <div class="flow-node" data-c="thesis.how.flow.0"></div>
+              <div class="flow-arrow"><i></i><small data-c="thesis.how.flowNotes.0"></small></div>
+              <div class="flow-node is-key" data-c="thesis.how.flow.1"></div>
+              <div class="flow-arrow"><i></i><small data-c="thesis.how.flowNotes.1"></small></div>
+              <div class="flow-node is-out" data-c="thesis.how.flow.2"></div>
+            </div>
+          </section>
+
+          <section class="doc-sec" id="objectives" aria-labelledby="obj-h">
+            <div class="sec-head"><span class="sec-num">05</span><h2 class="h2" id="obj-h" data-c="thesis.objectives.title" data-split></h2></div>
+            <div class="tabs" data-tabs>
+              <div class="tablist" role="tablist" aria-label="Objectives">
+                <button class="tab" role="tab" type="button" data-c="thesis.objectives.tabs.0.label"></button>
+                <button class="tab" role="tab" type="button" data-c="thesis.objectives.tabs.1.label"></button>
+                <span class="tab-ink" aria-hidden="true"></span>
+              </div>
+              <div role="tabpanel"><ol class="num-list" data-list="thesis.objectives.tabs.0.items"><template><li data-f="."></li></template></ol></div>
+              <div role="tabpanel" hidden><ol class="num-list" data-list="thesis.objectives.tabs.1.items"><template><li data-f="."></li></template></ol></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- CALL TO ACTION: Atland's "Work with us" band (words come from home.cta) -->
+    <section class="section section--navy cta-band" aria-labelledby="cta-h">
+      <div data-contours="10" data-opacity="0.16"></div>
+      <div class="container inner">
+        <h2 class="h2" id="cta-h" data-c="home.cta.title" data-split></h2>
+        <p data-c="home.cta.text" data-reveal></p>
+        <div data-reveal><a class="btn btn--gold" data-c-href="home.cta.button.href" data-magnetic><span data-c="home.cta.button.label"></span><span class="btn-dot" data-icon="arrow"></span></a></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

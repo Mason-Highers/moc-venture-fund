@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Moc Venture Fund</title>
+  <meta name="description" content="Get in touch with the Moc Venture Fund.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="contact" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- CONNECT: Utah's giant word -->
+    <section class="connect-hero" aria-labelledby="connect-h">
+      <div class="container">
+        <h1 class="connect-word" id="connect-h" data-connect>Connect</h1>
+        <p class="lead" style="margin: 28px auto 0; text-align: center" data-c="contact.intro"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- Utah's bordered contact card -->
+        <div class="contact-card" data-reveal="left">
+          <h2 data-c="contact.cardTitle"></h2>
+          <div><h3 data-c="contact.visitLabel"></h3><address data-list="site.address"><template><span data-f="."></span><br></template></address></div>
+          <div><h3 data-c="contact.emailLabel"></h3><a class="text-link" data-email></a></div>
+          <div><h3 data-c="contact.followLabel"></h3><div class="socials" data-list="site.social"><template><a data-f-href="url" data-f-attr="aria-label:label,data-icon:icon"></a></template></div></div>
+          <p class="muted" data-c="contact.giving"></p>
+        </div>
+
+        <!-- North Dakota's contact form with "I'm interested in" checkboxes (a preview: it doesn't send) -->
+        <form class="form form-card" data-demo="contact.demoMessage" novalidate data-reveal="right">
+          <div class="row2">
+            <div class="field"><label for="c-first">First name</label><input id="c-first" name="first" autocomplete="given-name"></div>
+            <div class="field"><label for="c-last">Last name</label><input id="c-last" name="last" autocomplete="family-name"></div>
+          </div>
+          <div class="field"><label for="c-email">Email *</label><input id="c-email" type="email" name="email" required autocomplete="email"></div>
+          <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message"></textarea></div>
+          <fieldset class="fieldset">
+            <legend>I'm interested in</legend>
+            <div class="checks" data-list="contact.interests"><template><label class="check"><input type="checkbox" name="interest"><span data-f="."></span></label></template></div>
+          </fieldset>
+          <div><button class="btn" type="submit"><span>Send</span><span class="btn-dot" data-icon="arrow"></span></button></div>
+          <p class="form-note" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

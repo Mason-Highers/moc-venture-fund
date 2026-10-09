@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team · Moc Venture Fund</title>
+  <meta name="description" content="The students, advisors, and mentors behind the Moc Venture Fund.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="team" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- HERO: Utah's giant headline with a gold underline -->
+    <section class="mega-hero" aria-labelledby="hero-h">
+      <div data-contours="10" data-opacity="0.16"></div>
+      <div class="container">
+        <h1 class="mega" id="hero-h" data-c="team.hero.title" data-split data-split-now></h1>
+        <nav class="anchor-list anchor-list--light" aria-label="On this page" data-list="team.hero.anchors">
+          <template><a data-f-href="href" data-f="label"></a></template>
+        </nav>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE: Utah's thread drops into the statement -->
+    <section class="section" style="padding-top: 24px" id="who" aria-labelledby="who-h">
+      <div class="container thread-step">
+        <p class="eyebrow t-start" data-c="team.who.from"></p>
+        <p class="eyebrow t-end" id="who-h" data-c="team.who.eyebrow"></p>
+      </div>
+      <div class="container"><p class="who-statement" data-c="team.who.statement" data-reveal style="margin-top: 36px"></p></div>
+    </section>
+
+    <!-- PEOPLE: North Dakota's headshot cards, with filters -->
+    <section class="section section--off" id="people" aria-labelledby="people-h">
+      <div class="container">
+        <div class="toolbar">
+          <h2 class="h2" id="people-h" data-c="team.peopleTitle"></h2>
+          <div class="chips" data-filter-for="people-grid" data-filter-key="data-group" role="group" aria-label="Filter the team" data-list="team.filters">
+            <template><button class="chip" type="button" data-f-attr="data-value:.|slug" data-f="." aria-pressed="false"></button></template>
+          </div>
+        </div>
+        <div class="people" id="people-grid" data-list="team.members">
+          <template>
+            <article class="person" data-f-attr="data-group:group|slug" data-reveal>
+              <div class="portrait-sq"><div data-contours="6" data-opacity="0.4"></div><span class="initials" data-f="name|initials" data-f-attr="data-name:name"></span></div>
+              <div class="meta">
+                <span class="role" data-f="role"></span>
+                <span class="name" data-f="name"></span>
+                <span class="detail" data-f="detail"></span>
+                <div class="row">
+                  <a class="icon-btn" data-f-href="linkedin" aria-label="LinkedIn profile" data-icon="linkedin"></a>
+                  <button class="more-btn" type="button" data-f-attr="data-bio:$i|n">Read bio</button>
+                </div>
+              </div>
+            </article>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVISORY BOARD: Utah's bordered name boxes -->
+    <section class="section" id="advisors" aria-labelledby="adv-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" id="adv-h" data-c="team.advisors.eyebrow"></p><p class="lead" data-c="team.advisors.intro"></p></div>
+        <div class="boxes" data-list="team.advisors.people">
+          <template><div class="box" data-reveal><b data-f="name"></b><span data-f="org"></span></div></template>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY: North Dakota's "Our journey so far", as a draggable timeline -->
+    <section class="section section--off" id="journey" aria-labelledby="jr-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" id="jr-h" data-c="team.journey.eyebrow"></p></div>
+        <div class="journey" data-journey>
+          <div class="journey-track" data-list="team.journey.items" tabindex="0" aria-label="Timeline, scroll sideways">
+            <template><article class="jcard"><span class="date" data-f="date"></span><span class="t" data-f="title"></span><p data-f="text"></p></article></template>
+          </div>
+          <div class="journey-controls">
+            <button type="button" data-dir="prev" aria-label="Earlier" data-icon="arrowL"></button>
+            <div class="journey-progress" aria-hidden="true"><i></i></div>
+            <button type="button" data-dir="next" aria-label="Later" data-icon="arrow"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN: North Dakota's dark role card -->
+    <section class="section" id="join" aria-labelledby="join-h">
+      <div class="container join-grid">
+        <div class="sec-head" style="margin:0">
+          <p class="eyebrow" data-c="team.join.eyebrow"></p>
+          <h2 class="h2" id="join-h" data-c="team.join.title" data-split></h2>
+          <p class="lead" data-c="team.join.text"></p>
+        </div>
+        <div class="role-card on-dark" data-reveal="right">
+          <div data-contours="7" data-opacity="0.28"></div>
+          <h3 data-c="team.join.role.title"></h3>
+          <p class="meta" data-c="team.join.role.meta"></p>
+          <p data-c="team.join.role.text"></p>
+          <a class="btn btn--gold btn--sm" data-c-href="team.join.role.cta.href"><span data-c="team.join.role.cta.label"></span><span class="btn-dot" data-icon="arrow"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="bio" aria-labelledby="bio-name">
+      <div class="bio-inner">
+        <div class="portrait-sq"><span class="initials"></span></div>
+        <div class="bio-text">
+          <span class="role bio-role"></span>
+          <h3 id="bio-name" class="bio-name"></h3>
+          <p class="muted bio-detail"></p>
+          <p class="bio-body"></p>
+          <a class="icon-btn bio-linkedin" href="#" aria-label="LinkedIn profile" data-icon="linkedin"></a>
+        </div>
+      </div>
+      <button class="bio-close" type="button" aria-label="Close" data-icon="close"></button>
+    </dialog>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

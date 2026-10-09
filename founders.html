@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>For founders · Moc Venture Fund</title>
+  <meta name="description" content="How to pitch the Moc Venture Fund, what we look for, and who is eligible.">
+  <!-- Private draft: keep search engines out until the school approves a launch -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..800,0..100,0..1;1,9..144,300..800,0..100,0..1&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/content.js"></script>
+  <script>
+    /* Motion flags: set before the page paints so nothing flashes. If the main script never loads, they clear themselves. */
+    (function (d) {
+      d.classList.remove("no-js"); d.classList.add("js");
+      var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var s = (window.MVF && window.MVF.settings) || {};
+      if (!reduce) { d.classList.add("motion-ok"); if (s.pageTransitions !== false) d.classList.add("wipe-in"); }
+      setTimeout(function () { if (!window.__mvfReady) d.classList.remove("motion-ok", "wipe-in"); }, 3500);
+    })(document.documentElement);
+  </script>
+</head>
+<body data-page="founders" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+
+  <main id="main">
+
+    <!-- HERO: North Dakota's "Get Funded," set against Chattanooga's ridges -->
+    <section class="ridge-hero on-dark" aria-labelledby="hero-h">
+      <span class="sun" aria-hidden="true"></span>
+      <div class="ridge-holder" data-ridges="11" data-plateau data-stretch data-layers="4"></div>
+      <div class="container">
+        <div class="inner">
+          <p class="eyebrow" data-c="founders.hero.eyebrow"></p>
+          <h1 class="h1" id="hero-h" data-c="founders.hero.title"></h1>
+          <p class="lead" data-c="founders.hero.lead"></p>
+          <div><a class="btn btn--gold" data-c-href="founders.hero.cta.href" data-magnetic><span data-c="founders.hero.cta.label"></span><span class="btn-dot" data-icon="arrow"></span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE LOOK FOR (shared with the thesis page) -->
+    <section class="section" aria-labelledby="look-h">
+      <div class="container">
+        <div class="sec-head"><h2 class="h2" id="look-h" data-c="founders.lookTitle" data-split></h2><p class="lead" data-c="thesis.look.intro"></p></div>
+        <div class="criteria criteria--4" data-list="thesis.look.criteria">
+          <template><article class="crit" data-reveal><span class="ico" data-f-attr="data-icon:icon"></span><h3 data-f="title"></h3><p data-f="text"></p></article></template>
+        </div>
+        <p class="check-line" data-c="thesis.look.check" data-reveal></p>
+      </div>
+    </section>
+
+    <!-- STAGE EXPLORER: click a stage to see what it looks like -->
+    <section class="section section--off" aria-labelledby="stages-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="founders.stages.eyebrow"></p><h2 class="h2" id="stages-h" data-c="founders.stages.title" data-split></h2></div>
+        <div class="stage-explorer" data-tabs data-stage-explorer>
+          <div class="stage-track" role="tablist" aria-label="Stages">
+            <span class="fill" aria-hidden="true"></span>
+            <button class="stage-btn" role="tab" type="button"><span class="dot">1</span><span data-c="founders.stages.tabs.0.label"></span></button>
+            <button class="stage-btn" role="tab" type="button"><span class="dot">2</span><span data-c="founders.stages.tabs.1.label"></span></button>
+            <button class="stage-btn" role="tab" type="button"><span class="dot">3</span><span data-c="founders.stages.tabs.2.label"></span></button>
+          </div>
+          <div role="tabpanel"><dl class="stage-table" data-stage-table="0"></dl></div>
+          <div role="tabpanel" hidden><dl class="stage-table" data-stage-table="1"></dl></div>
+          <div role="tabpanel" hidden><dl class="stage-table" data-stage-table="2"></dl></div>
+          <p class="note" data-c="founders.stages.note"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELIGIBILITY -->
+    <section class="section" id="eligibility" aria-labelledby="elig-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="founders.eligibility.eyebrow"></p><h2 class="h2" id="elig-h" data-c="founders.eligibility.title" data-split></h2></div>
+        <div class="elig">
+          <div class="elig-card yes" data-reveal>
+            <h3 data-c="founders.eligibility.eligibleTitle"></h3>
+            <ul class="ticks" data-list="founders.eligibility.eligible"><template><li><span data-icon="check"></span><span data-f="."></span></li></template></ul>
+          </div>
+          <div class="elig-card no" data-reveal>
+            <h3 data-c="founders.eligibility.ineligibleTitle"></h3>
+            <ul class="ticks" data-list="founders.eligibility.ineligible"><template><li><span data-icon="x"></span><span data-f="."></span></li></template></ul>
+          </div>
+        </div>
+        <div class="accordion elig-extra">
+          <div class="acc-item">
+            <h3><button class="acc-btn" type="button"><span data-c="founders.eligibility.differentTitle"></span><span class="pm" aria-hidden="true"></span></button></h3>
+            <div class="acc-panel"><div class="inner"><ul class="ticks" data-list="founders.eligibility.different"><template><li><span data-icon="info"></span><span data-f="."></span></li></template></ul></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS: A-Level Capital's numbered rows -->
+    <section class="section section--off" aria-labelledby="proc-h">
+      <div class="container">
+        <div class="sec-head"><p class="eyebrow" data-c="founders.process.eyebrow"></p><h2 class="h2" id="proc-h" data-c="founders.process.title" data-split></h2></div>
+        <ol class="steps-rows" data-list="founders.process.steps">
+          <template><li class="step-row" data-reveal><span class="n" data-f="$i|nn"></span><h3 data-f="title"></h3><p data-f="text"></p></li></template>
+        </ol>
+      </div>
+    </section>
+
+    <!-- APPLY: North Dakota's "Submit a pitch deck" form (a preview: it doesn't send) -->
+    <section class="section" id="apply" aria-labelledby="apply-h">
+      <div class="container apply-wrap">
+        <div class="sec-head">
+          <p class="eyebrow" data-c="founders.form.eyebrow"></p>
+          <h2 class="h2" id="apply-h" data-c="founders.form.title" data-split></h2>
+          <p class="lead" data-c="founders.form.intro"></p>
+        </div>
+        <div class="form-card" data-reveal>
+          <form class="form" data-demo="founders.form.demoMessage" novalidate>
+            <div class="row2">
+              <div class="field"><label for="f-first">First name *</label><input id="f-first" name="first" required autocomplete="given-name"></div>
+              <div class="field"><label for="f-last">Last name *</label><input id="f-last" name="last" required autocomplete="family-name"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="f-email">Email *</label><input id="f-email" type="email" name="email" required autocomplete="email"></div>
+              <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" name="phone" autocomplete="tel"></div>
+            </div>
+            <div class="row2">
+              <div class="field"><label for="f-co">Company *</label><input id="f-co" name="company" required autocomplete="organization"></div>
+              <div class="field"><label for="f-site">Website</label><input id="f-site" type="url" name="website" placeholder="https://"></div>
+            </div>
+            <div class="field">
+              <label for="f-stage">Stage</label>
+              <select id="f-stage" name="stage" data-list="founders.form.stages"><template><option data-f="."></option></template></select>
+            </div>
+            <fieldset class="fieldset">
+              <legend data-c="founders.form.connectionLabel"></legend>
+              <div class="checks" data-list="founders.form.connections"><template><label class="check"><input type="checkbox" name="connection"><span data-f="."></span></label></template></div>
+            </fieldset>
+            <div class="field"><label for="f-about">Tell us about your company *</label><textarea id="f-about" name="about" required></textarea></div>
+            <div class="field">
+              <span class="label-like" data-c="founders.form.deckLabel"></span>
+              <label class="dropzone">
+                <span data-icon="upload"></span>
+                <span class="dz-label"><strong>Upload your deck</strong> or drag it here</span>
+                <small data-c="founders.form.deckHint"></small>
+                <input type="file" name="deck" accept=".pdf,.ppt,.pptx,.key">
+              </label>
+            </div>
+            <div><button class="btn" type="submit"><span data-c="founders.form.submit"></span><span class="btn-dot" data-icon="arrow"></span></button></div>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE PRINT: North Dakota's gray policy band -->
+    <section class="section section--tight fine-print on-dark" aria-label="Fine print">
+      <div class="container inner"><p class="eyebrow" data-c="founders.finePrintTitle"></p><p data-c="founders.finePrint"></p></div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="faq-h">
+      <div class="container--narrow">
+        <div class="sec-head"><p class="eyebrow" data-c="founders.faq.eyebrow"></p><h2 class="h2" id="faq-h" data-c="founders.faq.title" data-split></h2></div>
+        <div class="accordion" data-list="founders.faq.items">
+          <template>
+            <div class="acc-item" data-reveal>
+              <h3><button class="acc-btn" type="button"><span data-f="q"></span><span class="pm" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel"><div class="inner"><p data-f="a"></p></div></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/Flip.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
