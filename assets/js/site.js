@@ -47,7 +47,7 @@
   function slug(v) { return plain(v).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
   function initials(v) {
     var t = plain(v).replace(/[\[\]]/g, "").trim();
-    var w = t.split(/\s+/).filter(Boolean);
+    var w = t.split(/\s+/).filter(function (x) { return x && !/^(dr|prof|mr|mrs|ms|mx)\.?$/i.test(x); });
     if (!w.length) return "";
     return (w[0][0] + (w.length > 1 ? w[w.length - 1][0] : "")).toUpperCase();
   }

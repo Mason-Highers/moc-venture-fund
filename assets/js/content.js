@@ -3,6 +3,12 @@
    --------------------------------------------------------------------------
    Every word on the site lives in this file. Edit the text between the quotes.
 
+   Sources:
+     thesis.*     The investment thesis, word for word, from
+                  "Moc Venture Fund Thesis copy.docx" (Oct 5), with its four
+                  Hamilton County phrases replaced by the IPS's geography.
+     Everything else follows the Investment Policy Statement (Oct 8 draft).
+
    Formatting you can use inside any text:
      [square brackets]  A placeholder. It shows highlighted on the site until
                         you replace it, so it's easy to spot what's left to fill.
@@ -65,7 +71,8 @@ window.MVF = {
         { label: "LinkedIn", href: "#" }
       ]}
     ],
-    partners: ["UC Foundation", "Gary W. Rollins College of Business", "UTC"],
+    // Sponsors, from IPS Section 2
+    partners: ["The University of Tennessee at Chattanooga", "UC Foundation", "Max Fuller Center for Innovation and Entrepreneurship", "Gary W. Rollins College of Business"],
     disclaimer: "The Moc Venture Fund is a student-run educational program funded through the UC Foundation. Nothing on this site is an offer to sell, or a solicitation of an offer to buy, any security. [Have UTC and UC Foundation counsel review this disclaimer before launch.]"
   },
 
@@ -74,34 +81,38 @@ window.MVF = {
     hero: {
       eyebrow: "Student-run venture capital · UTC",
       title: "From the classroom to the cap table.",
-      lead: "Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga. We invest from pre-seed through Series A, with priority for UTC-connected founders and Hamilton County companies.",
+      // The thesis's first paragraph, word for word
+      lead: "The Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga that prioritizes student education and experience. We invest from pre-seed through Series A in companies with product-market fit and realized revenue, giving priority to UTC-connected founders and the southeast region.",
       primary: { label: "Pitch your company", href: "founders.html#apply" },
       secondary: { label: "Read our thesis", href: "thesis.html" },
       explore: "Explore the fund"
     },
     about: {
       eyebrow: "What is MVF?",
-      statement: "Students run ==every step== of a real venture fund. They source companies, run diligence, and decide where ==real capital== goes. UTC backs them with resources, capital, and deal flow."
+      // From the thesis, "How the fund works"
+      statement: "Students control ==every action== of the fund. Students review every pitch deck, run the full diligence process, and ==decide== whether each investment is made."
     },
     band: {
       title: "Moc Venture Fund",
       subtitle: "The next generation of Chattanooga investors"
     },
+    // The thesis's three goals, in priority order, word for word
     pillars: [
-      { title: "Educate through real experience", text: "Students learn venture capital by doing it: sourcing companies, running diligence, and investing real capital.", photo: "[Photo: students in a diligence meeting]", href: "thesis.html#purpose" },
-      { title: "Build the Hamilton County region", text: "We put capital and student talent behind companies that build the local economy.", photo: "[Photo: a Hamilton County founder at work]", href: "thesis.html#who" },
-      { title: "Earn returns that reflect student success", text: "Our returns measure how well our students learn and perform. Every dollar returned is reinvested in the next class of students and founders.", photo: "[Photo: the team presenting to advisors]", href: "thesis.html#how" }
+      { title: "Educate students through real experience.", text: "Students learn venture capital by doing it: sourcing companies, running diligence, and investing real capital.", photo: "[Photo: students in a diligence meeting]", href: "thesis.html#purpose" },
+      { title: "Improve the Chattanooga Metropolitan and Southeast Region.", text: "We put capital and student talent behind companies that build our community.", photo: "[Photo: a local founder at work]", href: "thesis.html#who" },
+      { title: "Earn returns that reflect student success.", text: "Our returns measure how well our students learn and perform. Every dollar returned is reinvested in the next class of students and founders.", photo: "[Photo: the team presenting to advisors]", href: "thesis.html#how" }
     ],
     approach: {
       eyebrow: "Our approach",
       title: "Six steps. Students run all of them.",
+      // IPS: "sourcing, screening, diligence, voting, and portfolio monitoring"
       steps: [
-        { title: "Source", text: "Students and partners bring in deals from UTC, Hamilton County, and beyond." },
-        { title: "Screen", text: "Students take the first look at every pitch deck and share what they find with the fund." },
-        { title: "Diligence", text: "Deal teams meet founders more than once and dig into the market, the product, and the numbers." },
-        { title: "Present", text: "Each team writes an investment memo and presents it to the fund and its advisors." },
-        { title: "Decide", text: "Students vote on whether the fund invests." },
-        { title: "Support", text: "After the check, students help founders with research, introductions, and follow-up." }
+        { title: "Source", text: "Students find companies through UTC, the Chattanooga Metropolitan Area, the Southeast, and beyond." },
+        { title: "Screen", text: "Students review every pitch deck and share what they find with the fund." },
+        { title: "Diligence", text: "Members meet founders more than once before any vote and run the full diligence process." },
+        { title: "Present", text: "Members write investment memos and present them to the fund and the advisory board." },
+        { title: "Vote", text: "Students decide whether each investment is made." },
+        { title: "Monitor", text: "Members take part in portfolio monitoring after every investment." }
       ]
     },
     numbers: {
@@ -109,18 +120,18 @@ window.MVF = {
       photo: "[Photo: the full team]",
       stats: [
         { value: 100, suffix: "%", label: "Student-run, from the first pitch to the final vote" },
-        { value: 3, label: "Stages we invest in: pre-seed, seed, and Series A" },
+        { value: "$25k–$50k", label: "Typical investment, pre-seed through Series A" },
         { value: 43, label: "University venture programs we studied to build ours" },
         { value: "[##]", label: "Student members from [##] majors" }
       ]
     },
     statement: {
-      lines: ["Learn by doing.", "Invest where ==we live.=="]
+      lines: ["Learn by doing.", "Invest locally ==first.=="]
     },
     divider: "Who we work with",
     audiences: [
-      { kicker: "Founders", title: "Pitch the fund", text: "Building in Hamilton County or connected to UTC? We want to see your deck.", href: "founders.html" },
-      { kicker: "Students", title: "Join the fund", text: "Any major can apply. Learn venture capital by doing it.", href: "team.html#join" },
+      { kicker: "Founders", title: "Pitch the fund", text: "UTC-connected, or building in Chattanooga or the Southeast? We want to see your deck.", href: "founders.html" },
+      { kicker: "Students", title: "Join the fund", text: "Members come from many majors. Learn venture capital by doing it.", href: "team.html#join" },
       { kicker: "Supporters", title: "Partner with us", text: "Mentors, investors, and alumni: help train the next class of investors.", href: "contact.html" }
     ],
     voices: {
@@ -136,18 +147,26 @@ window.MVF = {
       items: ["[Company A]", "[Company B]", "[Company C]", "[Company D]", "[Company E]", "[Company F]"]
     },
     cta: {
-      title: "Building something in Hamilton County?",
-      text: "We review pitch decks from UTC-connected founders and local companies first, and from strong companies anywhere in the United States.",
+      title: "Building something worth backing?",
+      // IPS Section 6, geographic priority
+      text: "We look first in the Chattanooga Metropolitan Area, then the surrounding metropolitan areas, the greater southeast region, and the rest of the United States. UTC-connected founders get priority wherever they are.",
       button: { label: "Pitch the fund", href: "founders.html#apply" }
     }
   },
 
-  /* -------------------------------------------------------------- THESIS */
+  /* -------------------------------------------------------------- THESIS
+     Word for word from "Moc Venture Fund Thesis copy.docx" (Oct 5), except
+     four Hamilton County phrases, which use the IPS's wording:
+       1. "Hamilton County companies"          -> "the southeast region"
+       2. "Make the Hamilton County region better." -> "Improve the Chattanooga Metropolitan and Southeast Region."
+       3. "a home in Hamilton County"          -> "a home in the Chattanooga Metropolitan Area"
+       4. "Companies based in Hamilton County" -> "Companies based in the Chattanooga Metropolitan Area"
+     ------------------------------------------------------------------- */
   thesis: {
     hero: {
       title: "Our investment thesis.",
-      cardEyebrow: "The thesis",
-      card: "**Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga. We invest from pre-seed through Series A in companies with product-market fit and realized revenue, giving priority to UTC-connected founders and Hamilton County companies.**"
+      cardEyebrow: "Our thesis",
+      card: "The Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga that prioritizes student education and experience. We invest from pre-seed through Series A in companies with product-market fit and realized revenue, giving priority to UTC-connected founders and the southeast region."
     },
     anchors: [
       { label: "Purpose", href: "#purpose" },
@@ -161,57 +180,54 @@ window.MVF = {
       intro: "The fund pursues three goals. When they compete, the higher goal wins.",
       items: [
         { title: "Educate students through real experience.", text: "Students learn venture capital by doing it: sourcing companies, running diligence, and investing real capital." },
-        { title: "Make the Hamilton County region better.", text: "We put capital and student talent behind companies that build the local economy." },
+        { title: "Improve the Chattanooga Metropolitan and Southeast Region.", text: "We put capital and student talent behind companies that build our community." },
         { title: "Earn returns that reflect student success.", text: "Our returns measure how well our students learn and perform. Every dollar returned is reinvested in the next class of students and founders." }
       ]
     },
     who: {
       title: "Who we invest in",
-      intro: "We give priority to companies with a UTC connection or a home in Hamilton County, and we consider strong opportunities anywhere in the United States.",
-      inner: { label: "First priority", text: "Hamilton County companies and UTC-connected companies" },
-      outer: { label: "Also considered", text: "Companies anywhere in the United States that meet our criteria" },
-      definition: "**A UTC connection** means a founder or executive is a UTC student, alum, faculty member, or staff member, or the company is built on UTC research."
+      intro: "We give priority to companies with a UTC connection or a home in the Chattanooga Metropolitan Area, and we consider strong opportunities anywhere in the United States.",
+      first: { label: "First priority", text: "Companies based in the Chattanooga Metropolitan Area, and companies with a UTC connection. A UTC connection means a founder or executive who is a UTC student, alum, faculty, or staff member, or the company is built on UTC research." },
+      also: { label: "Also considered", text: "Companies anywhere in the United States that meet the criteria below." }
     },
     look: {
       title: "What we look for",
       intro: "We are industry agnostic. We consider traditional venture-scale companies and companies in industries that venture capital usually overlooks.",
       criteria: [
         { icon: "stairs", title: "Stage", text: "Pre-seed through Series A." },
-        { icon: "trend", title: "Traction", text: "Companies that show product-market fit and realized revenue." },
+        { icon: "trend", title: "Traction", text: "We focus on companies that show a product market fit and have realized revenue." },
         { icon: "spark", title: "A unique value proposition", text: "A clear reason customers choose this company over the alternatives." },
-        { icon: "handshake", title: "Founder-market fit", text: "Founders whose experience, insight, or ties to the market give them an edge on the problem they're solving." }
-      ],
-      check: "Typical check: **[$X to $Y]**. Our investment policy statement sets the limits."
+        { icon: "handshake", title: "Founder-market fit", text: "Founders whose experience, insight, or ties to the market give them an edge on the problem they are solving." }
+      ]
     },
     how: {
       title: "How the fund works",
-      students: { label: "Students", text: "Students control every action of the fund. They review every pitch deck, run the full diligence process, and decide whether each investment is made." },
+      students: { label: "Students", text: "Students control every action of the fund. Students review every pitch deck, run the full diligence process, and decide whether each investment is made." },
       utc: { label: "UTC", text: "UTC guides the students through this learning experience. The university provides resources, capital, and deal flow." },
-      flow: ["UTC and the UC Foundation", "Students", "Founders"],
-      flowNotes: ["Resources, capital, deal flow", "Review, diligence, decision"]
+      flow: ["UTC", "Students", "Founders"],
+      flowNotes: ["Resources, capital, and deal flow", "Review, diligence, and decisions"]
     },
+    // Not part of the thesis: IPS Section 4, Investment Objectives
     objectives: {
-      title: "What we measure ourselves against",
+      title: "Our objectives",
+      source: "From our investment policy statement",
+      conflict: "When objectives conflict, we stick to the thesis: education takes ultimate priority, then regional impact, then financial.",
       tabs: [
-        { label: "Education", items: [
-          "Run the full venture process on real companies.",
-          "Write and defend investment memos.",
-          "Learn early-stage finance: valuation, cap tables, term sheets, SAFEs, and notes.",
-          "Judge founders and markets firsthand.",
-          "Learn across disciplines on mixed-major deal teams.",
-          "Build ties to Chattanooga's startup and investor community.",
-          "Develop leaders who train their successors.",
-          "Launch careers in venture capital, finance, and entrepreneurship."
+        { label: "Educational", items: [
+          "**Run the full venture process on real companies.** Every member takes part in sourcing, screening, diligence, voting, and portfolio monitoring, using real capital.",
+          "**Write and defend investment analysis.** Each member writes their own investment memos each semester and presents them to the fund and the advisory board. New members write a practice memo on a past deal or a company the fund passed on.",
+          "**Learn early-stage finance.** Members learn startup valuation, cap tables, term sheets, SAFEs, and convertible notes through the fund.",
+          "**Judge founders and markets firsthand.** Members meet founders more than once before any vote, and learn to assess founder-market fit and a company's unique value proposition.",
+          "**Learn across disciplines.** Student members consist of mixed majors and work with a variety of industries, so the learning experience is optimized for members.",
+          "**Build ties to Chattanooga's startup and investor community.** Members work with local founders, investors, and mentors through deals, events, and internships.",
+          "**Launch careers.** The fund prepares students for careers in venture capital, private equity, finance, and entrepreneurship."
         ]},
         { label: "Regional impact", items: [
-          "Invest in Hamilton County first.",
-          "Fill the early funding gap for companies too early or too small for institutional investors.",
-          "Bring more capital in behind ours.",
-          "Grow local jobs and revenue.",
-          "Support founders beyond the check, whether or not we invest.",
-          "Keep talent in Chattanooga.",
-          "Strengthen the local startup community with events and partners.",
-          "Back companies that venture capital overlooks."
+          "**Invest locally first.** A significant number of investments goes to UTC-connected, Chattanooga Metropolitan, and surrounding metropolitan areas.",
+          "**Bring more capital in behind others.** The fund invests after local angels and venture firms, putting more outside money into chosen companies.",
+          "**Grow local jobs and revenue.** Portfolio companies add jobs and grow revenue locally.",
+          "**Grow talent in Chattanooga.** Founders and firms develop alongside students in both skill and funding.",
+          "**Strengthen the local startup community.** The fund hosts events each semester for local entrepreneurs and works with partners."
         ]}
       ]
     }
@@ -232,7 +248,7 @@ window.MVF = {
     who: {
       from: "Meet the fund",
       eyebrow: "Who we are",
-      statement: "We are a student-run team of **[##] members from [##] majors**, backed by mentors, advisors, and Chattanooga's founders."
+      statement: "We are a student-managed fund of **[##] members from [##] majors**, guided by faculty advisors and backed by the UC Foundation."
     },
     peopleTitle: "Our team",
     filters: ["All", "Leadership", "Analysts", "Advisors"],
@@ -245,12 +261,13 @@ window.MVF = {
       { name: "[Name]", role: "Analyst", group: "Analysts", detail: "[Major], Class of [20XX]", bio: "[Short bio.]", linkedin: "#" },
       { name: "[Name]", role: "Analyst", group: "Analysts", detail: "[Major], Class of [20XX]", bio: "[Short bio.]", linkedin: "#" },
       { name: "[Name]", role: "Analyst", group: "Analysts", detail: "[Major], Class of [20XX]", bio: "[Short bio.]", linkedin: "#" },
-      { name: "[Name]", role: "Faculty Advisor", group: "Advisors", detail: "[Department]", bio: "[Short bio.]", linkedin: "#" },
-      { name: "[Name]", role: "Advisor", group: "Advisors", detail: "[Title, Organization]", bio: "[Short bio.]", linkedin: "#" }
+      // Faculty advisors, from IPS Section 2
+      { name: "Dr. Hunter Holzhauer", role: "Faculty Advisor", group: "Advisors", detail: "[Title, Department]", bio: "[Short bio.]", linkedin: "#" },
+      { name: "Mike Bradshaw", role: "Faculty Advisor", group: "Advisors", detail: "[Title, Department]", bio: "[Short bio.]", linkedin: "#" }
     ],
     advisors: {
       eyebrow: "Advisory board",
-      intro: "Experienced investors and operators who review student recommendations and coach deal teams.",
+      intro: "Members present their investment memos to the fund and the advisory board. [Advisory board members to be determined.]",
       people: [
         { name: "[Advisor name]", org: "[Title, Organization]" },
         { name: "[Advisor name]", org: "[Title, Organization]" },
@@ -263,22 +280,22 @@ window.MVF = {
     journey: {
       eyebrow: "Our journey so far",
       items: [
-        { date: "Aug 2026", title: "The idea", text: "Students propose a fund that would let UTC students invest in local companies." },
+        { date: "Aug 2026", title: "The idea", text: "Students propose a fund that would let UTC students invest in real companies." },
         { date: "Sep 2026", title: "The research", text: "The team studies 43 university venture programs across the country." },
         { date: "Oct 2026", title: "The thesis", text: "The team drafts the fund's investment thesis and investment policy statement." },
         { date: "[Date]", title: "Approval", text: "[The UC Foundation approves the fund's investment policy.]" },
-        { date: "[Date]", title: "First class", text: "[The first class of analysts joins the fund.]" },
+        { date: "2027", title: "Founding year", text: "The Moc Venture Fund is founded." },
         { date: "[Date]", title: "First investment", text: "[The fund makes its first investment.]" }
       ]
     },
     join: {
       eyebrow: "Join us",
       title: "Let's work together.",
-      text: "Any major can apply. Members learn venture capital by doing it: sourcing deals, meeting founders, writing memos, and voting on real investments.",
+      text: "Student members come from mixed majors and work with a variety of industries. Every member takes part in sourcing, screening, diligence, voting, and portfolio monitoring, using real capital.",
       role: {
-        title: "Analyst",
-        meta: "Open to all majors · Chattanooga, TN",
-        text: "New analysts train in early-stage finance, join a deal team, and present to the fund in their first semester. [Time commitment per week.]",
+        title: "Member",
+        meta: "Open to mixed majors · Chattanooga, TN",
+        text: "New members write a practice memo on a past deal or a company the fund passed on, then write and present their own investment memos each semester. [Time commitment per week.]",
         cta: { label: "Apply now", href: "contact.html" }
       }
     }
@@ -287,22 +304,23 @@ window.MVF = {
   /* ----------------------------------------------------------- PORTFOLIO */
   portfolio: {
     hero: {
-      title: "Backing the builders of Hamilton County.",
+      title: "Backing founders from Chattanooga and beyond.",
       anchors: [
         { label: "About our portfolio", href: "#about" },
         { label: "Fund I", href: "#fund" },
         { label: "Companies", href: "#companies" }
       ],
       cardEyebrow: "About our portfolio",
-      card: "Fund I backs pre-seed through Series A companies with product-market fit and real revenue, starting with UTC-connected founders and Hamilton County companies."
+      // IPS Section 2, Mission
+      card: "We typically invest $25k–$50k in pre-seed through Series A companies with product-market and founder-market fits, giving priority to UTC-connected founders and the southeast region."
     },
     highlights: {
       eyebrow: "Fund I highlights",
-      items: ["**[$X]** committed through the UC Foundation", "**[##]** pitch decks reviewed", "**[##]** investments made", "**[##]** jobs at Hamilton County portfolio companies"]
+      items: ["**[$X]** committed through the UC Foundation", "**[##]** pitch decks reviewed", "**[##]** investments made", "**[##]** local jobs at portfolio companies"]
     },
     funds: [
-      { num: "1", name: "Fund I", text: "An evergreen fund seeded through the UC Foundation. Returns are reinvested in the next class of students and founders.", link: { label: "Read the thesis", href: "thesis.html" } },
-      { num: "2", name: "[Future fund or sector]", text: "[Space for a second fund, a sector, or a co-investment program.]", link: { label: "Contact us", href: "contact.html" } }
+      { num: "1", name: "Fund I", text: "Held by the UC Foundation. Every dollar returned is reinvested in the next class of students and founders.", link: { label: "Read the thesis", href: "thesis.html" } },
+      { num: "2", name: "[Future fund]", text: "[Space for capital from future LPs or donors.]", link: { label: "Contact us", href: "contact.html" } }
     ],
     companiesTitle: "Companies",
     filters: ["All", "Pre-seed", "Seed", "Series A"],
@@ -316,61 +334,85 @@ window.MVF = {
     ]
   },
 
-  /* ------------------------------------------------------------ FOUNDERS */
+  /* ------------------------------------------------------------ FOUNDERS
+     Follows IPS Section 6 (Investment Eligibility) and Section 2 (Mission).
+     "What we look for" reuses the thesis criteria above, word for word.
+     ------------------------------------------------------------------- */
   founders: {
     hero: {
       eyebrow: "For founders",
       title: "Get funded.",
-      lead: "We review pitch decks from UTC-connected founders and Hamilton County companies first, and from strong companies anywhere in the United States.",
+      lead: "We give priority to UTC-connected founders and the Chattanooga Metropolitan Area, then the surrounding metropolitan areas, the greater southeast region, and the rest of the United States.",
       cta: { label: "Submit your pitch", href: "#apply" }
     },
     lookTitle: "What we look for",
+    check: "We typically invest **$25k–$50k** in pre-seed through Series A companies with product-market and founder-market fits.",
     stages: {
       eyebrow: "Where we invest",
       title: "Pre-seed through Series A",
-      rows: ["Product", "Product-market fit", "Revenue", "Team", "What the money is for", "The question we ask"],
+      rows: ["Product", "Product-market fit", "Revenue", "Team", "Instrument", "What the money is for"],
       tabs: [
-        { label: "Pre-seed", values: ["A prototype or first version. It may not be launched yet.", "A hypothesis, with early interest such as pilots, letters of intent, or a waitlist.", "Usually none, or first sales.", "Founders, with few or no employees.", "Build the product and test the market.", "Can this team build something people want?"] },
-        { label: "Seed", values: ["Launched and in customers' hands, and changing quickly.", "Early signs: paying customers who stay and come back.", "Early, growing revenue.", "First hires beyond the founders.", "Prove product-market fit and find a repeatable way to sell.", "Will customers keep buying?"] },
-        { label: "Series A", values: ["The core product is proven, and the company is adding features or product lines.", "Demonstrated: strong retention and a repeatable way to win customers.", "Meaningful, fast-growing revenue.", "Leaders hired for sales, marketing, and operations.", "Scale what already works.", "Can growth repeat at scale?"] }
-      ],
-      note: "Because we look for realized revenue, most companies we back are late pre-seed or seed. At Series A, we usually invest as a follow-on investor."
+        { label: "Pre-seed", values: [
+          "A finished blueprint, prototype or first version; may not be launched",
+          "A hypothesis; early interest such as pilots, letters of intent, or a waitlist",
+          "Usually none, or first sales",
+          "Founder(s), few or no employees",
+          "SAFE or convertible debt investments",
+          "Build the product and test the market"
+        ]},
+        { label: "Seed", values: [
+          "Depending on the industry, the product is launched and in customers' hands; changing quickly, or undergoing approval.",
+          "Early signs: paying customers who stay and come back",
+          "Early, growing revenue based on industry, can be none depending on product or service",
+          "First hires beyond the founders",
+          "SAFE, first priced equity round, or convertible debt investments",
+          "Prove product-market fit and find a repeatable way to sell, or expedite approval of the product"
+        ]},
+        { label: "Series A", values: [
+          "Core product proven; adding features or product lines. Looking to expand location or staff.",
+          "Demonstrated: strong retention and user metrics as compared to industry",
+          "Meaningful, fast-growing revenue",
+          "Leaders hired for sales, marketing, and operations",
+          "Priced preferred equity or convertible debt investments",
+          "Scale what already works"
+        ]}
+      ]
     },
     eligibility: {
       eyebrow: "Eligibility",
       title: "Who can pitch",
-      eligibleTitle: "Eligible",
-      eligible: [
-        "Companies based in Hamilton County.",
-        "Companies with a UTC connection: a founder or executive who is a UTC student, alum, faculty member, or staff member, or a company built on UTC research.",
-        "Strong companies anywhere in the United States."
+      tiers: ["Chattanooga Metropolitan Area", "Surrounding metropolitan areas", "Greater southeast region", "United States"],
+      priorityTitle: "Geographic priority",
+      priority: [
+        "**The Chattanooga Metropolitan Area.** Companies headquartered or founded with operations in the Chattanooga Metropolitan area.",
+        "**Surrounding metropolitan areas.**",
+        "**The greater southeast region.**",
+        "**The rest of the United States.** Out-of-region companies are considered, with favoritism given to surrounding metro areas or UTC-connected firms."
       ],
+      utcTitle: "What counts as a UTC connection",
+      utc: "Active faculty, researchers, or students. Any member who graduated from UTC or has an immediate family member who graduated from UTC.",
+      stagesLine: "**Eligible stages:** Pre-seed, Seed, Series A.",
       ineligibleTitle: "Not eligible",
       ineligible: [
-        "Current fund members, while they're members.",
-        "People who direct or approve the fund's investments, and their immediate families.",
-        "Founders who fail a background check, such as for a fraud or securities conviction.",
-        "Founders who misrepresent their company during diligence.",
-        "Founders who won't share financials, the cap table, or prior funding documents.",
-        "Companies without at least one committed founder [working full-time]."
+        "**Current fund members.** Students who are active members can't receive an investment from the fund while they're members.",
+        "**People who control the fund.** The faculty director, program staff, advisory board members, and UC Foundation officers involved in approving deals are ineligible along with immediate family members.",
+        "**Founders who fail a background check.** This covers a fraud or securities conviction, a regulatory ban, registered felons, or a name on a government sanctions list.",
+        "**Founders who misrepresent their company.** This applies to anyone who gives false revenue, customer, or ownership information during diligence.",
+        "**Founders who won't allow diligence.** This applies to anyone who refuses to share financials, the cap table, or prior funding documents.",
+        "**Founders not committed to the company.** This applies when no founder works on the company for a significant amount of time unless an exception is approved."
       ],
-      differentTitle: "Eligible, with extra steps",
-      different: [
-        "A member's friend, relative, or business contact: the member discloses the tie and sits out the vote.",
-        "UTC faculty and staff founders: eligible, subject to UT System conflict-of-interest review.",
-        "Former fund members: eligible after [waiting period]."
-      ]
+      excluded: "**Excluded industries:** any industry restricted by UC Foundation or UTC policy."
     },
     process: {
       eyebrow: "After you apply",
       title: "What happens next",
       steps: [
         { title: "Submit your pitch", text: "Send your deck through the form below." },
-        { title: "First look", text: "Students screen every deck within [two weeks]." },
-        { title: "Meet the team", text: "We meet founders more than once before any vote." },
-        { title: "Diligence", text: "A deal team reviews your product, market, numbers, and documents." },
-        { title: "Decision", text: "The deal team presents a memo and the fund votes." },
-        { title: "Support", text: "We stay involved with research, introductions, and follow-up." }
+        { title: "First look", text: "Students review every pitch deck. [How fast founders hear back.]" },
+        { title: "Meet the team", text: "Members meet founders more than once before any vote." },
+        { title: "Diligence", text: "Students run the full diligence process." },
+        { title: "Decision", text: "Members present an investment memo to the fund and the advisory board, and students decide whether the investment is made." },
+        { title: "Support", text: "Members take part in portfolio monitoring after every investment." }
       ]
     },
     form: {
@@ -378,10 +420,10 @@ window.MVF = {
       title: "Submit a pitch deck",
       intro: "Takes about five minutes. Fields marked * are required.",
       stages: ["Pre-seed", "Seed", "Series A", "Not sure"],
-      connections: ["Based in Hamilton County", "UTC student or alum founder", "UTC faculty or staff founder", "Built on UTC research", "None of these"],
       deckLabel: "Pitch deck",
       deckHint: "PDF or slides, up to [size limit]",
-      connectionLabel: "Connection to UTC or Hamilton County",
+      connectionLabel: "Connection to UTC or the region",
+      connections: ["UTC student, faculty member, or researcher", "UTC graduate", "Immediate family member of a UTC graduate", "Based in the Chattanooga Metropolitan Area", "Based elsewhere in the Southeast", "None of these"],
       submit: "Submit pitch",
       demoMessage: "Thanks! This form is a preview and doesn't send anything yet. [Connect it to the fund's form service before launch.]"
     },
@@ -391,10 +433,11 @@ window.MVF = {
       eyebrow: "FAQ",
       title: "Questions founders ask",
       items: [
-        { q: "Do I need revenue?", a: "We focus on companies with product-market fit and realized revenue. Pre-seed companies with early sales are welcome to apply." },
-        { q: "Do I have to be in Chattanooga?", a: "No. Hamilton County companies and UTC-connected founders get priority, and we consider strong companies anywhere in the United States." },
-        { q: "How much do you invest?", a: "Our typical check is [$X to $Y]. We usually join rounds led by other investors." },
-        { q: "What industries do you invest in?", a: "We are industry agnostic, including industries that venture capital usually overlooks." },
+        { q: "Do I need revenue?", a: "We focus on companies that show a product market fit and have realized revenue. Depending on the industry, a seed-stage company may have none yet." },
+        { q: "Do I have to be in Chattanooga?", a: "No. We look first in the Chattanooga Metropolitan Area, then the surrounding metropolitan areas, the greater southeast region, and the rest of the United States. UTC-connected companies get priority wherever they are." },
+        { q: "How much do you invest?", a: "We typically invest $25k–$50k. The fund invests after local angels and venture firms, putting more outside money into chosen companies." },
+        { q: "What instruments do you use?", a: "SAFEs, convertible debt, or priced equity, depending on the company's stage." },
+        { q: "What industries do you invest in?", a: "We are industry agnostic, including industries that venture capital usually overlooks. We don't invest in any industry restricted by UC Foundation or UTC policy." },
         { q: "Who sees my pitch deck?", a: "[Who sees pitch materials, and how the fund keeps them confidential.]" },
         { q: "How long does a decision take?", a: "[Typical time from first look to decision.]" }
       ]
@@ -433,7 +476,7 @@ window.MVF = {
     lead: "Two peaks, a valley, and a seed. The logo tells the fund's story in one shape.",
     parts: [
       { title: "The M", text: "M for Mocs, drawn as two peaks. Chattanooga sits between ridges, and so does the fund." },
-      { title: "The gold V", text: "V for venture. It sits in the valley, the way the fund invests where we live." },
+      { title: "The gold V", text: "V for venture. It sits in the valley, the way the fund invests locally first." },
       { title: "The seed", text: "A diamond at the bottom of the V. Pre-seed and seed are where the companies we back begin." }
     ],
     strategyTitle: "Why it's built this way",
@@ -456,8 +499,8 @@ window.MVF = {
     colorsNote: "All six colors are defined in the CSS on utc.edu's home page.",
     type: [
       { name: "Fraunces", use: "Headlines and quotes", sample: "From the classroom to the cap table." },
-      { name: "Inter", use: "Body text and forms", sample: "Students run every step of a real venture fund." },
-      { name: "Oswald", use: "Labels, numbers, and the wordmark. It's also UTC's heading font.", sample: "MOC VENTURE FUND · 2026" }
+      { name: "Inter", use: "Body text and forms", sample: "Students control every action of the fund." },
+      { name: "Oswald", use: "Labels, numbers, and the wordmark. It's also UTC's heading font.", sample: "MOC VENTURE FUND · 2027" }
     ],
     files: [
       { label: "Full logo", file: "assets/img/logo.svg", dark: false },

@@ -51,7 +51,7 @@
         <div class="criteria criteria--4" data-list="thesis.look.criteria">
           <template><article class="crit" data-reveal><span class="ico" data-f-attr="data-icon:icon"></span><h3 data-f="title"></h3><p data-f="text"></p></article></template>
         </div>
-        <p class="check-line" data-c="thesis.look.check" data-reveal></p>
+        <p class="check-line" data-c="founders.check" data-reveal></p>
       </div>
     </section>
 
@@ -69,29 +69,29 @@
           <div role="tabpanel"><dl class="stage-table" data-stage-table="0"></dl></div>
           <div role="tabpanel" hidden><dl class="stage-table" data-stage-table="1"></dl></div>
           <div role="tabpanel" hidden><dl class="stage-table" data-stage-table="2"></dl></div>
-          <p class="note" data-c="founders.stages.note"></p>
         </div>
       </div>
     </section>
 
-    <!-- ELIGIBILITY -->
+    <!-- ELIGIBILITY: IPS Section 6 -->
     <section class="section" id="eligibility" aria-labelledby="elig-h">
       <div class="container">
         <div class="sec-head"><p class="eyebrow" data-c="founders.eligibility.eyebrow"></p><h2 class="h2" id="elig-h" data-c="founders.eligibility.title" data-split></h2></div>
         <div class="elig">
           <div class="elig-card yes" data-reveal>
-            <h3 data-c="founders.eligibility.eligibleTitle"></h3>
-            <ul class="ticks" data-list="founders.eligibility.eligible"><template><li><span data-icon="check"></span><span data-f="."></span></li></template></ul>
+            <div class="tiers" aria-hidden="true" data-list="founders.eligibility.tiers">
+              <template><div class="tier"><span data-f="."></span></div></template>
+            </div>
+            <h3 data-c="founders.eligibility.priorityTitle"></h3>
+            <ol class="ticks tiers-list" data-list="founders.eligibility.priority"><template><li><span class="tnum" data-f="$i|n"></span><span data-f="."></span></li></template></ol>
+            <h3 data-c="founders.eligibility.utcTitle"></h3>
+            <p data-c="founders.eligibility.utc"></p>
+            <p data-c="founders.eligibility.stagesLine"></p>
           </div>
           <div class="elig-card no" data-reveal>
             <h3 data-c="founders.eligibility.ineligibleTitle"></h3>
             <ul class="ticks" data-list="founders.eligibility.ineligible"><template><li><span data-icon="x"></span><span data-f="."></span></li></template></ul>
-          </div>
-        </div>
-        <div class="accordion elig-extra">
-          <div class="acc-item">
-            <h3><button class="acc-btn" type="button"><span data-c="founders.eligibility.differentTitle"></span><span class="pm" aria-hidden="true"></span></button></h3>
-            <div class="acc-panel"><div class="inner"><ul class="ticks" data-list="founders.eligibility.different"><template><li><span data-icon="info"></span><span data-f="."></span></li></template></ul></div></div>
+            <p class="muted" data-c="founders.eligibility.excluded"></p>
           </div>
         </div>
       </div>
