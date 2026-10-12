@@ -156,7 +156,7 @@
     if (f === "nn") return (idx + 1 < 10 ? "0" : "") + (idx + 1);
     if (f === "partkey") return ["legs", "v", "seed"][idx] || "";
     if (f === "bg") return "background:" + val;
-    if (f === "font") return "font-family:'" + plain(val) + "', serif";
+    if (f === "font") return "font-family:'" + plain(val) + "', sans-serif";
     if (f === "pvclass") return val ? "pv dark" : "pv";
     return val;
   }

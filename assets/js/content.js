@@ -207,27 +207,27 @@ window.MVF = {
       flow: ["UTC", "Students", "Founders"],
       flowNotes: ["Resources, capital, and deal flow", "Review, diligence, and decisions"]
     },
-    // Not part of the thesis: IPS Section 4, Investment Objectives
+    // Not part of the thesis: IPS Section 4, Investment Objectives (wording shortened for the web)
     objectives: {
       title: "Our objectives",
       source: "From our investment policy statement",
-      conflict: "When objectives conflict, we stick to the thesis: education takes ultimate priority, then regional impact, then financial.",
+      conflict: "When objectives conflict, we stick to the thesis: education first, then regional impact, then financial returns.",
       tabs: [
         { label: "Educational", items: [
-          "**Run the full venture process on real companies.** Every member takes part in sourcing, screening, diligence, voting, and portfolio monitoring, using real capital.",
-          "**Write and defend investment analysis.** Each member writes their own investment memos each semester and presents them to the fund and the advisory board. New members write a practice memo on a past deal or a company the fund passed on.",
-          "**Learn early-stage finance.** Members learn startup valuation, cap tables, term sheets, SAFEs, and convertible notes through the fund.",
-          "**Judge founders and markets firsthand.** Members meet founders more than once before any vote, and learn to assess founder-market fit and a company's unique value proposition.",
-          "**Learn across disciplines.** Student members consist of mixed majors and work with a variety of industries, so the learning experience is optimized for members.",
-          "**Build ties to Chattanooga's startup and investor community.** Members work with local founders, investors, and mentors through deals, events, and internships.",
-          "**Launch careers.** The fund prepares students for careers in venture capital, private equity, finance, and entrepreneurship."
+          "**Run the full venture process on real companies.** Every member takes part in sourcing, screening, diligence, voting, and portfolio monitoring with real capital.",
+          "**Write and defend investment analysis.** Members write memos each semester and present them to the fund and the advisory board. New members start with a practice memo.",
+          "**Learn early-stage finance.** Valuation, cap tables, term sheets, SAFEs, and convertible notes.",
+          "**Judge founders and markets firsthand.** Members meet founders more than once before any vote and learn to assess founder-market fit and value propositions.",
+          "**Learn across disciplines.** Members come from mixed majors and work across many industries.",
+          "**Build ties to Chattanooga's startup and investor community.** Through deals, events, and internships with local founders, investors, and mentors.",
+          "**Launch careers.** In venture capital, private equity, finance, and entrepreneurship."
         ]},
         { label: "Regional impact", items: [
-          "**Invest locally first.** A significant number of investments goes to UTC-connected, Chattanooga Metropolitan, and surrounding metropolitan areas.",
-          "**Bring more capital in behind others.** The fund invests after local angels and venture firms, putting more outside money into chosen companies.",
+          "**Invest locally first.** A significant share of investments goes to UTC-connected companies and the Chattanooga and surrounding metropolitan areas.",
+          "**Bring more capital in behind others.** The fund invests after local angels and venture firms, adding outside money to chosen companies.",
           "**Grow local jobs and revenue.** Portfolio companies add jobs and grow revenue locally.",
-          "**Grow talent in Chattanooga.** Founders and firms develop alongside students in both skill and funding.",
-          "**Strengthen the local startup community.** The fund hosts events each semester for local entrepreneurs and works with partners."
+          "**Grow talent in Chattanooga.** Founders and firms develop alongside students in skill and funding.",
+          "**Strengthen the local startup community.** Events each semester for local entrepreneurs, run with partners."
         ]}
       ]
     }
@@ -465,7 +465,7 @@ window.MVF = {
       colorEyebrow: "Color",
       colorTitle: "UTC navy and gold",
       typeEyebrow: "Type",
-      typeTitle: "Three typefaces",
+      typeTitle: "UTC's two typefaces",
       filesEyebrow: "Files",
       filesTitle: "Logo files",
       filesLead: "Every file is a vector SVG, so it stays sharp at any size.",
@@ -483,7 +483,7 @@ window.MVF = {
     strategy: [
       { title: "A shape, not a chart", text: "Finance logos lean on arrows and charts, and the SMILE Fund already owns the rising arrow on campus. A letter built from mountains is ours alone." },
       { title: "A story in one sentence", text: "People remember a logo they can explain. Two peaks, a valley, and a seed: Chattanooga, venture, and the companies we back." },
-      { title: "UTC colors, new form", text: "Navy and gold tie the fund to UTC at a glance, while the shape stays the fund's own." },
+      { title: "UTC colors and fonts, new form", text: "UTC's navy, gold, Oswald, and Raleway tie the fund to UTC at a glance, while the shape stays the fund's own." },
       { title: "Gold where the eye lands", text: "Gold carries only the V and the seed, so the eye goes to venture first." },
       { title: "Holds up at every size", text: "The M still reads as a 16-pixel browser icon, and it scales up to a banner or a sticker." },
       { title: "Built to move", text: "On this site the parts animate: the peaks rise, the V drops in, and the seed lands last." }
@@ -497,10 +497,10 @@ window.MVF = {
       { name: "Teal Link", hex: "#116484", note: "Links in long text." }
     ],
     colorsNote: "All six colors are defined in the CSS on utc.edu's home page.",
+    // The same two Google Fonts families utc.edu loads. Use nothing else.
     type: [
-      { name: "Fraunces", use: "Headlines and quotes", sample: "From the classroom to the cap table." },
-      { name: "Inter", use: "Body text and forms", sample: "Students control every action of the fund." },
-      { name: "Oswald", use: "Labels, numbers, and the wordmark. It's also UTC's heading font.", sample: "MOC VENTURE FUND · 2027" }
+      { name: "Oswald", use: "Headlines, labels, numbers, and the wordmark. UTC's heading font.", sample: "From the classroom to the cap table." },
+      { name: "Raleway", use: "Body text, buttons, forms, and quotes. UTC's body font.", sample: "Students control every action of the fund." }
     ],
     files: [
       { label: "Full logo", file: "assets/img/logo.svg", dark: false },

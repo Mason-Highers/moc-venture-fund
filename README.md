@@ -84,6 +84,15 @@ The layout and motion follow the University Venture Fund (Utah) and Dakota Ventu
 
 Animations use [GSAP](https://gsap.com) 3.15 (free) with its ScrollTrigger and Flip plugins, loaded from jsDelivr. Everything respects the visitor's "reduce motion" setting. If GSAP fails to load, every page still shows all of its content.
 
+## Fonts (required)
+
+Use only UTC's two web fonts, loaded from the same Google Fonts files utc.edu uses:
+
+- **Oswald:** headlines, labels, numbers, and the wordmark
+- **Raleway:** body text, buttons, forms, and quotes
+
+Don't add any other font. The font tokens are at the top of `assets/css/styles.css`, and the Google Fonts link is in the `<head>` of every page.
+
 ## Colors
 
 From the CSS on utc.edu's home page: UTC Navy `#112E51` and UTC Gold `#FDB736`, plus Deep Navy `#081524`, Light Blue `#E7EAEE`, Medium Blue `#D0D6DC`, and Teal Link `#116484`.
