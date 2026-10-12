@@ -82,7 +82,7 @@ window.MVF = {
       eyebrow: "Student-run venture capital · UTC",
       title: "From the classroom to the cap table.",
       // The thesis's first paragraph, word for word
-      lead: "The Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga that prioritizes student education and experience. We invest from pre-seed through Series A in companies with product-market fit and realized revenue, giving priority to UTC-connected founders and the southeast region.",
+      lead: "The Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga that prioritizes student education and experience. We invest from pre-seed through Series A in companies with product-market fit, giving priority to UTC-connected founders and the southeast region.",
       primary: { label: "Pitch your company", href: "founders.html#apply" },
       secondary: { label: "Read our thesis", href: "thesis.html" },
       explore: "Explore the fund"
@@ -161,12 +161,15 @@ window.MVF = {
        2. "Make the Hamilton County region better." -> "Improve the Chattanooga Metropolitan and Southeast Region."
        3. "a home in Hamilton County"          -> "a home in the Chattanooga Metropolitan Area"
        4. "Companies based in Hamilton County" -> "Companies based in the Chattanooga Metropolitan Area"
+     And "realized revenue" is removed (no longer fund policy, per Mason, Oct 12):
+       5. "...with product-market fit and realized revenue, giving..." -> "...with product-market fit, giving..."
+       6. "...show a product market fit and have realized revenue." -> "...show a product market fit."
      ------------------------------------------------------------------- */
   thesis: {
     hero: {
       title: "Our investment thesis.",
       cardEyebrow: "Our thesis",
-      card: "The Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga that prioritizes student education and experience. We invest from pre-seed through Series A in companies with product-market fit and realized revenue, giving priority to UTC-connected founders and the southeast region."
+      card: "The Moc Venture Fund is a student-run venture capital fund at the University of Tennessee at Chattanooga that prioritizes student education and experience. We invest from pre-seed through Series A in companies with product-market fit, giving priority to UTC-connected founders and the southeast region."
     },
     anchors: [
       { label: "Purpose", href: "#purpose" },
@@ -195,7 +198,7 @@ window.MVF = {
       intro: "We are industry agnostic. We consider traditional venture-scale companies and companies in industries that venture capital usually overlooks.",
       criteria: [
         { icon: "stairs", title: "Stage", text: "Pre-seed through Series A." },
-        { icon: "trend", title: "Traction", text: "We focus on companies that show a product market fit and have realized revenue." },
+        { icon: "trend", title: "Traction", text: "We focus on companies that show a product market fit." },
         { icon: "spark", title: "A unique value proposition", text: "A clear reason customers choose this company over the alternatives." },
         { icon: "handshake", title: "Founder-market fit", text: "Founders whose experience, insight, or ties to the market give them an edge on the problem they are solving." }
       ]
@@ -433,7 +436,7 @@ window.MVF = {
       eyebrow: "FAQ",
       title: "Questions founders ask",
       items: [
-        { q: "Do I need revenue?", a: "We focus on companies that show a product market fit and have realized revenue. Depending on the industry, a seed-stage company may have none yet." },
+        { q: "Do I need revenue?", a: "No. We focus on companies that show a product market fit. What we expect depends on the company's stage and industry." },
         { q: "Do I have to be in Chattanooga?", a: "No. We look first in the Chattanooga Metropolitan Area, then the surrounding metropolitan areas, the greater southeast region, and the rest of the United States. UTC-connected companies get priority wherever they are." },
         { q: "How much do you invest?", a: "We typically invest $25k–$50k. The fund invests after local angels and venture firms, putting more outside money into chosen companies." },
         { q: "What instruments do you use?", a: "SAFEs, convertible debt, or priced equity, depending on the company's stage." },
